@@ -1,56 +1,20 @@
-﻿## Начало работы с проектом
-# v-0.0.1-a
+﻿1. Работа с git.
+Создайте репозиторий на GitHub.
+Клонируйте и подготовьте локальный репозиторий проекта. Для этого создайте файл исключений, добавьте файл лицензии и вложите файл описания проекта.
+Создайте ветку для урока.
 
-[![N|Solid](https://www.python.org/static/img/python-logo.png)](https://www.python.org/)
-[![N|Solid](https://git-scm.com/images/logo@2x.png)](https://git-scm.com/docs/git-apply)
+2. Работа с проектом.
+Установите Django.
+Создайте проект и приложение в главной папке проекта.
+Перенесите статичный сайт в проект, вложив его в созданное приложение.
+Скорректируйте файлы вёрстки для корректной загрузки статических файлов.
 
-### GIT :
+3. Подключите VS Code к проекту.
 
-```sh
-git clone https://github.com/django_basic_project
+4. (*) Разберитесь, почему не работают ссылки в проекте. Ответ приложите в комментарии к сдаче практического задания.
 
-cd ./django_basic_project/
-```
+5. (*) Подключите к проекту PyCharm Community.
 
-### ЯП версия [Python 3.10](https://www.python.org/).
+6. (**) Запросите в техподдержке ключ на возможность использования PyCharm Professional, установите и подключите к проекту.
 
-Создание виртуального окружения.
-```sh
-sudo apt install python3-virtualenv
-
-virtualenv -p python3 venv
-
-sourse ./venv/bin/activate
-```
-
-Установка зависимостей.
-
-```sh
-pip3 install -r requirements.txt
-```
-
-Сохранение новых зависимостей
-
-```sh
-pip3 freeze > requirements.txt
-```
-
-## Запуск приложения.
-
-```sh
-python manage.py runserver
-```
-
-## Компоненты
-
-| _Компоненты_                       | _Описание_    | _Расположение_                                     |
-|------------------------------------|---------------|----------------------------------------------------|
-| Логгирование                       | {descroption} | https://github.com/{project_name}/{project_module} |
-| Соединение с БД                    | {descroption} | https://github.com/{project_name}/{project_module} |
-| Миграции                           | {descroption} | https://github.com/{project_name}/{project_module} |
-| Тесты                              | {descroption} | https://github.com/{project_name}/{project_module} |
-| Промежуточное (вспомогаьельное ПО) | {descroption} | https://github.com/{project_name}/{project_module} |
-| Компоненты:                        | {descroption} | https://github.com/{project_name}/{project_module} |
-| Документация                       | {descroption} | https://github.com/{project_name}/{project_module} |
-| API                                | {descroption} | https://github.com/{project_name}/{project_module} |
-
+7. (**) Подключите VS Code, работающий на хостовой машине, к папке проекта на виртуальной машине через протокол SSH.
