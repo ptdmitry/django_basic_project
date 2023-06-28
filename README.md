@@ -1,4 +1,4 @@
-## Начало работы с проектом
+﻿## Начало работы с проектом
 # v-0.0.1-a
 
 [![N|Solid](https://www.python.org/static/img/python-logo.png)](https://www.python.org/)
@@ -7,9 +7,9 @@
 ### GIT :
 
 ```sh
-git clone https://github.com/{name_project}
+git clone https://github.com/django_basic_project
 
-cd {name_projet}
+cd ./django_basic_project/
 ```
 
 ### ЯП версия [Python 3.10](https://www.python.org/).
@@ -18,9 +18,9 @@ cd {name_projet}
 ```sh
 sudo apt install python3-virtualenv
 
-virtualenv -p python3 {name_env}
+virtualenv -p python3 venv
 
-sourse ./{name_env}/bin/activate
+sourse ./venv/bin/activate
 ```
 
 Установка зависимостей.
