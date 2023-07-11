@@ -1,56 +1,13 @@
-﻿## Начало работы с проектом
-# v-0.0.1-a
+﻿1. Сформируйте в проекте систему шаблонизации. Создайте базовый шаблон. На его основе переделайте шаблоны других страниц, используя расширения. Сделайте основное меню сайта как отдельный включаемый шаблон.
 
-[![N|Solid](https://www.python.org/static/img/python-logo.png)](https://www.python.org/)
-[![N|Solid](https://git-scm.com/images/logo@2x.png)](https://git-scm.com/docs/git-apply)
+2. В основном меню реализуйте подсветку элементов, используя шаблонный тег условия.
 
-### GIT :
+3. На странице новостей организуйте цикл, где выводятся карточки новостей (5 одинаковых карточек).
 
-```sh
-git clone https://github.com/django_basic_project
+4. В пагинаторе на странице новостей добавьте возможность перехода по ссылкам с параметром.
 
-cd ./django_basic_project/
-```
+5. Создайте собственный шаблонный фильтр для автоматического формирования ссылки типа mailto и примените его на странице контактов.
 
-### ЯП версия [Python 3.10](https://www.python.org/).
+6. (*) Сформируйте JSON-файл и разместите в нём несколько сгенерированных новостей с заголовками, используя сервисы russiannlp или «Балабоба» (https://russiannlp.github.io/rugpt-demo/). Затем выведите их в цикле на странице новостей.
 
-Создание виртуального окружения.
-```sh
-sudo apt install python3-virtualenv
-
-virtualenv -p python3 venv
-
-sourse ./venv/bin/activate
-```
-
-Установка зависимостей.
-
-```sh
-pip3 install -r requirements.txt
-```
-
-Сохранение новых зависимостей
-
-```sh
-pip3 freeze > requirements.txt
-```
-
-## Запуск приложения.
-
-```sh
-python manage.py runserver
-```
-
-## Компоненты
-
-| _Компоненты_                       | _Описание_    | _Расположение_                                     |
-|------------------------------------|---------------|----------------------------------------------------|
-| Логгирование                       | {descroption} | https://github.com/{project_name}/{project_module} |
-| Соединение с БД                    | {descroption} | https://github.com/{project_name}/{project_module} |
-| Миграции                           | {descroption} | https://github.com/{project_name}/{project_module} |
-| Тесты                              | {descroption} | https://github.com/{project_name}/{project_module} |
-| Промежуточное (вспомогаьельное ПО) | {descroption} | https://github.com/{project_name}/{project_module} |
-| Компоненты:                        | {descroption} | https://github.com/{project_name}/{project_module} |
-| Документация                       | {descroption} | https://github.com/{project_name}/{project_module} |
-| API                                | {descroption} | https://github.com/{project_name}/{project_module} |
-
+7. (**) На странице новостей создайте отдельную карточку, где некоторые слова представляют собой ссылку с GET-параметром. Сделайте так, чтобы при её обработке на стороне сервера производилось автоматическое перенаправление на любую поисковую систему с запросом из этого параметра.
