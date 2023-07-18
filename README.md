@@ -1,56 +1,24 @@
-﻿## Начало работы с проектом
-# v-0.0.1-a
+﻿1. Создайте модели для новостей, курсов, уроков и преподавателей. Используйте различные типы полей:
+ - набор символов (CharField);
+ - текстовое (TextField);
+ - с логическим значением (BooleanField);
+ - дата-время (DateTimeField);
+ - со значением и плавающей точкой (DecimalField);
+ - ссылочный тип (ForeignKey, ManyToManyField).
 
-[![N|Solid](https://www.python.org/static/img/python-logo.png)](https://www.python.org/)
-[![N|Solid](https://git-scm.com/images/logo@2x.png)](https://git-scm.com/docs/git-apply)
+2. Сформируйте файлы миграции для созданных моделей. Через механизм миграций убедитесь в их применимости.
 
-### GIT :
+3. Заполните из консоли, подключённой к проекту, данными одну из моделей. Затем выполните создание фикстуры. Фикстуру наполните данными и проверьте корректность применения.
 
-```sh
-git clone https://github.com/django_basic_project
+4. Создайте пустую миграцию и наполните её опциями для заполнения таблицы в БД и для возможности отката.
 
-cd ./django_basic_project/
-```
+5. (*) Создайте отдельные миграции со своим уникальным именем для каждой модели.
 
-### ЯП версия [Python 3.10](https://www.python.org/).
+6. (*) Создайте миграции данных для всех моделей.
 
-Создание виртуального окружения.
-```sh
-sudo apt install python3-virtualenv
+7. (**) После создания всех моделей и наполнения их данными посредством механизма миграций перенесите данные из одного поля через промежуточную модель. Для каждой операции — отдельная миграция.
 
-virtualenv -p python3 venv
-
-sourse ./venv/bin/activate
-```
-
-Установка зависимостей.
-
-```sh
-pip3 install -r requirements.txt
-```
-
-Сохранение новых зависимостей
-
-```sh
-pip3 freeze > requirements.txt
-```
-
-## Запуск приложения.
-
-```sh
-python manage.py runserver
-```
-
-## Компоненты
-
-| _Компоненты_                       | _Описание_    | _Расположение_                                     |
-|------------------------------------|---------------|----------------------------------------------------|
-| Логгирование                       | {descroption} | https://github.com/{project_name}/{project_module} |
-| Соединение с БД                    | {descroption} | https://github.com/{project_name}/{project_module} |
-| Миграции                           | {descroption} | https://github.com/{project_name}/{project_module} |
-| Тесты                              | {descroption} | https://github.com/{project_name}/{project_module} |
-| Промежуточное (вспомогаьельное ПО) | {descroption} | https://github.com/{project_name}/{project_module} |
-| Компоненты:                        | {descroption} | https://github.com/{project_name}/{project_module} |
-| Документация                       | {descroption} | https://github.com/{project_name}/{project_module} |
-| API                                | {descroption} | https://github.com/{project_name}/{project_module} |
-
+Перенесите данные в другую модель.
+Очистите данные в исходной модели.
+Перенесите данные в исходную модель.
+Удалите промежуточную модель.
