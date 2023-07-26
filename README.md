@@ -1,56 +1,24 @@
-﻿## Начало работы с проектом
-# v-0.0.1-a
+﻿1. Создайте новое приложение authapp.
 
-[![N|Solid](https://www.python.org/static/img/python-logo.png)](https://www.python.org/)
-[![N|Solid](https://git-scm.com/images/logo@2x.png)](https://git-scm.com/docs/git-apply)
+2. В приложении authapp создайте новую модель пользователя. Добавьте в неё новые поля, в том числе для загрузки изображения пользователя.
 
-### GIT :
+3. Настройте проект:
+Зарегистрируйте новое приложение.
+Сделайте новую модель пользователя «по умолчанию».
+Настройте сохранение сообщений в сессии пользователя.
+Добавьте настройки по работе с медиафайлами.
 
-```sh
-git clone https://github.com/django_basic_project
+4. Создайте шаблоны и контроллеры:
+- для страницы входа;
+- выхода с сайта;
+- страницы регистрации;
+- страницы редактирования профиля с обязательной проверкой - аутентификации пользователя;
+- чтобы задействовать в шаблонах механизм, отвечающий за проверку аутентификации пользователя.
 
-cd ./django_basic_project/
-```
+5. Реализуйте аутентификацию пользователя через GitHub.
 
-### ЯП версия [Python 3.10](https://www.python.org/).
+6. (*) Реализуйте аутентификацию пользователя через любую другую социальную сеть.
 
-Создание виртуального окружения.
-```sh
-sudo apt install python3-virtualenv
+7. (*) Выполните аутентификацию пользователя через email и пароль.
 
-virtualenv -p python3 venv
-
-sourse ./venv/bin/activate
-```
-
-Установка зависимостей.
-
-```sh
-pip3 install -r requirements.txt
-```
-
-Сохранение новых зависимостей
-
-```sh
-pip3 freeze > requirements.txt
-```
-
-## Запуск приложения.
-
-```sh
-python manage.py runserver
-```
-
-## Компоненты
-
-| _Компоненты_                       | _Описание_    | _Расположение_                                     |
-|------------------------------------|---------------|----------------------------------------------------|
-| Логгирование                       | {descroption} | https://github.com/{project_name}/{project_module} |
-| Соединение с БД                    | {descroption} | https://github.com/{project_name}/{project_module} |
-| Миграции                           | {descroption} | https://github.com/{project_name}/{project_module} |
-| Тесты                              | {descroption} | https://github.com/{project_name}/{project_module} |
-| Промежуточное (вспомогаьельное ПО) | {descroption} | https://github.com/{project_name}/{project_module} |
-| Компоненты:                        | {descroption} | https://github.com/{project_name}/{project_module} |
-| Документация                       | {descroption} | https://github.com/{project_name}/{project_module} |
-| API                                | {descroption} | https://github.com/{project_name}/{project_module} |
-
+8. (**) Реализуйте регистронезависимое имя пользователя.
