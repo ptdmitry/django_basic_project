@@ -1,56 +1,19 @@
-﻿## Начало работы с проектом
-# v-0.0.1-a
+﻿1. Настройте и добавьте в проект логгер.
+- Реализуйте свой вид лог-сообщений, содержащий время, имя модуля, номер строки, уровень сообщения и само сообщение.
+- Осуществите вывод отдельных сообщений какого-либо приложения в файл.
+- Реализуйте лог-сообщения в проекте.
 
-[![N|Solid](https://www.python.org/static/img/python-logo.png)](https://www.python.org/)
-[![N|Solid](https://git-scm.com/images/logo@2x.png)](https://git-scm.com/docs/git-apply)
+2. Осуществите просмотр файла лога в веб-интерфейсе и возможность его скачать. На странице вывода отобразите только первые 1 000 строк файла.
+- (**) На странице вывода отобразите только последние 1 000 строк файла при ограниченных ресурсах оперативной памяти. ### 3. Настройте и добавьте в проект кеш-систему на основе Redis.
+- Добавьте кеш вызова контроллера.
+- Добавьте кеш внутри шаблона.
+- Добавьте низкоуровневый кеш для переиспользования выборки на странице курсов.
 
-### GIT :
+4. Настройте и добавьте в проект систему отложенных задач на основе Celery:
+- В качестве backend для Celery воспользуйтесь Redis.
+- (**) В качестве backend для Celery воспользуйтесь RabbitMQ.
+- Реализуйте форму отправки сообщения в техподдержку по электронной почте через систему отложенных задач. Отправку сообщения организуйте в файл.
 
-```sh
-git clone https://github.com/django_basic_project
+5. (*) Реализуйте кеш страницы новостей.
 
-cd ./django_basic_project/
-```
-
-### ЯП версия [Python 3.10](https://www.python.org/).
-
-Создание виртуального окружения.
-```sh
-sudo apt install python3-virtualenv
-
-virtualenv -p python3 venv
-
-sourse ./venv/bin/activate
-```
-
-Установка зависимостей.
-
-```sh
-pip3 install -r requirements.txt
-```
-
-Сохранение новых зависимостей
-
-```sh
-pip3 freeze > requirements.txt
-```
-
-## Запуск приложения.
-
-```sh
-python manage.py runserver
-```
-
-## Компоненты
-
-| _Компоненты_                       | _Описание_    | _Расположение_                                     |
-|------------------------------------|---------------|----------------------------------------------------|
-| Логгирование                       | {descroption} | https://github.com/{project_name}/{project_module} |
-| Соединение с БД                    | {descroption} | https://github.com/{project_name}/{project_module} |
-| Миграции                           | {descroption} | https://github.com/{project_name}/{project_module} |
-| Тесты                              | {descroption} | https://github.com/{project_name}/{project_module} |
-| Промежуточное (вспомогаьельное ПО) | {descroption} | https://github.com/{project_name}/{project_module} |
-| Компоненты:                        | {descroption} | https://github.com/{project_name}/{project_module} |
-| Документация                       | {descroption} | https://github.com/{project_name}/{project_module} |
-| API                                | {descroption} | https://github.com/{project_name}/{project_module} |
-
+6. (*) Настройте проект на отправку электронных писем со страницы, включая форму, через реальный сервер. Проверьте работоспособность. При выполнении задания уберите все личные данные (логин и пароль) из файла настроек!
