@@ -1,56 +1,19 @@
-﻿## Начало работы с проектом
-# v-0.0.1-a
+﻿1. В учебном проекте реализуйте объект пагинатора на странице новостей.
+(*)Реализуйте объект пагинатора как включаемую часть шаблона для всех страниц со списками.
 
-[![N|Solid](https://www.python.org/static/img/python-logo.png)](https://www.python.org/)
-[![N|Solid](https://git-scm.com/images/logo@2x.png)](https://git-scm.com/docs/git-apply)
+2. Добавьте в проект систему интернационализации. Реализуйте главное меню на двух языках с возможностью переключения.
 
-### GIT :
+3. Добавьте в проект:
+- Тест доступности главной страницы.
+- Тесты для проверки CRUD-операций через аутентифицированного пользователя объектов новостей.
+- Тесты недоступности CRUD-операций для неаутентифицированного пользователя объектов новостей.
+- Тест отложенной задачи по проверке отправки электронной почты.
+- Тест, проверяющий доступность страницы, которая использует систему кеширования. Реализуйте изоляцию вызываемого контроллера от внешней системы для кеша через mock-объект.
+- Тесты, использующие инструмент Selenium. Проверьте переход по кнопке на другую страницу. Проанализируйте соответствие цвета, заданного CSS-стилем. Осуществите проверку аутентифицированным пользователем.
 
-```sh
-git clone https://github.com/django_basic_project
+4. (*) Покройте тестами доступности все страницы сайта, в том числе переход по разным страницам со списком.
 
-cd ./django_basic_project/
-```
+5. (**) Реализуйте CRUD-тесты через инструмент Selenium с использованием отдельного конфигурационного файла для тестов. Произведите проверку переключения языка через инструмент Selenium.
 
-### ЯП версия [Python 3.10](https://www.python.org/).
 
-Создание виртуального окружения.
-```sh
-sudo apt install python3-virtualenv
-
-virtualenv -p python3 venv
-
-sourse ./venv/bin/activate
-```
-
-Установка зависимостей.
-
-```sh
-pip3 install -r requirements.txt
-```
-
-Сохранение новых зависимостей
-
-```sh
-pip3 freeze > requirements.txt
-```
-
-## Запуск приложения.
-
-```sh
-python manage.py runserver
-```
-
-## Компоненты
-
-| _Компоненты_                       | _Описание_    | _Расположение_                                     |
-|------------------------------------|---------------|----------------------------------------------------|
-| Логгирование                       | {descroption} | https://github.com/{project_name}/{project_module} |
-| Соединение с БД                    | {descroption} | https://github.com/{project_name}/{project_module} |
-| Миграции                           | {descroption} | https://github.com/{project_name}/{project_module} |
-| Тесты                              | {descroption} | https://github.com/{project_name}/{project_module} |
-| Промежуточное (вспомогаьельное ПО) | {descroption} | https://github.com/{project_name}/{project_module} |
-| Компоненты:                        | {descroption} | https://github.com/{project_name}/{project_module} |
-| Документация                       | {descroption} | https://github.com/{project_name}/{project_module} |
-| API                                | {descroption} | https://github.com/{project_name}/{project_module} |
-
+https://mlocati.github.io/articles/gettext-iconv-windows.html
