@@ -1,56 +1,9 @@
-﻿## Начало работы с проектом
-# v-0.0.1-a
+﻿1. Подготовьте конфигурацию проекта для запуска на развёрнутом сервере.
+(*) Реализуйте отдельную конфигурацию, включающую только настройки для режима отладки (debug).
 
-[![N|Solid](https://www.python.org/static/img/python-logo.png)](https://www.python.org/)
-[![N|Solid](https://git-scm.com/images/logo@2x.png)](https://git-scm.com/docs/git-apply)
+2. Подготовьте сервер и разверните на нём проект.
+(*) При переносе зависимостей реализуйте отдельный файл, включающий пакеты только для среды отладки (debug).
 
-### GIT :
+3. Проведите нагрузочное тестирование, используя ПО locust, и в комментариях к ПЗ укажите медиану по времени ответа от сервера для запроса по всем страницам при 250 пользователях.
 
-```sh
-git clone https://github.com/django_basic_project
-
-cd ./django_basic_project/
-```
-
-### ЯП версия [Python 3.10](https://www.python.org/).
-
-Создание виртуального окружения.
-```sh
-sudo apt install python3-virtualenv
-
-virtualenv -p python3 venv
-
-sourse ./venv/bin/activate
-```
-
-Установка зависимостей.
-
-```sh
-pip3 install -r requirements.txt
-```
-
-Сохранение новых зависимостей
-
-```sh
-pip3 freeze > requirements.txt
-```
-
-## Запуск приложения.
-
-```sh
-python manage.py runserver
-```
-
-## Компоненты
-
-| _Компоненты_                       | _Описание_    | _Расположение_                                     |
-|------------------------------------|---------------|----------------------------------------------------|
-| Логгирование                       | {descroption} | https://github.com/{project_name}/{project_module} |
-| Соединение с БД                    | {descroption} | https://github.com/{project_name}/{project_module} |
-| Миграции                           | {descroption} | https://github.com/{project_name}/{project_module} |
-| Тесты                              | {descroption} | https://github.com/{project_name}/{project_module} |
-| Промежуточное (вспомогаьельное ПО) | {descroption} | https://github.com/{project_name}/{project_module} |
-| Компоненты:                        | {descroption} | https://github.com/{project_name}/{project_module} |
-| Документация                       | {descroption} | https://github.com/{project_name}/{project_module} |
-| API                                | {descroption} | https://github.com/{project_name}/{project_module} |
-
+4. (**) Разверните проект на сервере, используя микросервисную архитектуру.
